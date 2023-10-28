@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import InvestementIMG from "./assets/investment-calculator-logo.png";
 import UserInput from "./components/UserInput";
 import ResultsTable from "./components/ResultsTable";
 import { calculateInvestmentResults, formatter } from "./util/investment.js";
@@ -24,8 +24,12 @@ function App() {
 
   return (
     <>
+      <header id="header">
+        <img src={InvestementIMG} alt="investment calculator logo" />
+        <h1>Investment Calculator</h1>
+      </header>
       <UserInput info={info} onChange={handleChange} />
-      
+
       <ResultsTable info={info} />
     </>
   );
