@@ -25,7 +25,7 @@ function App() {
   return (
     <>
       <UserInput info={info} onChange={handleChange} />
-      {!inputIsValid && <h2>Duration Cant be negative</h2>}
+      
       <ResultsTable info={info} />
     </>
   );
